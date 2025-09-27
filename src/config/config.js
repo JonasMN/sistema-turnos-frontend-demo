@@ -9,7 +9,7 @@ const config = {
   URL: {
     STOP_APP_URL: 'http://localhost:3000', // Valor fijo para demo
     STOP_APP_URL_BACK: 'http://localhost:8000', // Valor fijo para demo
-    BASENAME: '' // Sin basename para demo
+    BASENAME: process.env.NODE_ENV === 'production' ? '/sistema-turnos-frontend-demo' : '' // Basename para GitHub Pages
   },
   // Configuraciones adicionales para modo demo
   DEMO_MODE: true,
