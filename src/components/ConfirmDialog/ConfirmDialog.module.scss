@@ -1,0 +1,25 @@
+.confirmBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .d-flex Button {
+    min-width: 100px;
+  }
+}

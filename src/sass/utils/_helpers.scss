@@ -1,0 +1,392 @@
+@use '../../sass/utils/querys' as q;
+
+$sizes: 1rem,
+  2rem,
+  3rem,
+  4rem !important;
+
+.h0 {
+  height: 0 !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+@for $i from 0 through 10 {
+  .w#{$i} {
+    width: 1rem * $i !important;
+  }
+
+  .height#{$i} {
+    height: 1rem * $i !important;
+  }
+
+  .h#{$i}vh {
+    height: ($i) * 10vh !important;
+  }
+
+  .m#{$i} {
+    margin: 1rem * $i !important;
+  }
+
+  .ml#{$i} {
+    margin-left: 1rem * $i !important;
+  }
+
+  .mb#{$i} {
+    margin-bottom: 1rem * $i !important;
+  }
+
+  .mr#{$i} {
+    margin-right: 1rem * $i !important;
+  }
+
+  .mt#{$i} {
+    margin-top: 1rem * $i !important;
+  }
+
+  .mx#{$i} {
+    margin-inline: 1rem * $i !important;
+  }
+
+  .my#{$i} {
+    margin-block: 1rem * $i !important;
+  }
+
+  .gap-#{$i} {
+    gap: 1rem * $i !important;
+  }
+}
+
+.my-auto {
+  margin-inline: auto !important;
+}
+
+@for $i from 0 through 100 {
+  .mw#{$i} {
+    max-width: 1rem * $i !important;
+  }
+
+  .mh#{$i} {
+    max-height: 1rem * $i !important;
+  }
+
+}
+
+/* ---------------- */
+@for $i from 0 through 10 {
+  .h#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      height: ($i) * 10vh !important;
+    }
+  }
+
+
+  .m#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin: 1rem * $i !important;
+    }
+  }
+
+
+  .ml#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-left: 1rem * $i !important;
+    }
+  }
+
+  .mb#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-bottom: 1rem * $i !important;
+    }
+  }
+
+  .mr#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-right: 1rem * $i !important;
+    }
+  }
+
+  .mt#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-top: 1rem * $i !important;
+    }
+  }
+
+  .mx#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-inline: 1rem * $i !important;
+    }
+  }
+
+  .my#{$i}-maxtablet {
+    @media(max-width:1090px) {
+      margin-block: 1rem * $i !important;
+    }
+  }
+
+}
+
+
+@for $i from 0 through 3 {
+  .z#{$i} {
+    position: relative;
+    z-index: 1* $i !important;
+  }
+
+  .z-#{$i} {
+    position: relative;
+    z-index: -1* $i !important;
+  }
+}
+
+@for $i from 1 through 5 {
+  .p#{$i} {
+    padding: 1rem * $i !important;
+  }
+
+  .pl#{$i} {
+    padding-left: 1rem * $i !important;
+  }
+
+  .pb#{$i} {
+    padding-bottom: 1rem * $i !important;
+  }
+
+  .pr#{$i} {
+    padding-right: 1rem * $i !important;
+  }
+
+  .pt#{$i} {
+    padding-top: 1rem * $i !important;
+  }
+
+  .px#{$i} {
+    padding-inline: 1rem * $i !important;
+  }
+
+  .py#{$i} {
+    padding-block: 1rem * $i !important;
+  }
+}
+
+.relative {
+  position: relative
+}
+
+.color-white {
+  color: #FFF !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@for $i from 0 through 20 {
+  $value: $i * 5;
+
+  .w#{$value} {
+    width: 1% * $value !important;
+  }
+
+  .w#{$value}-maxtablet {
+    @media(max-width:1090px) {
+      width: 1% * $value !important;
+    }
+  }
+}
+
+.break-spaces {
+  white-space: break-spaces;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+
+.d-none {
+  display: none !important;
+}
+
+.wmincontent {
+  width: min-content !important;
+}
+
+.hmincontent {
+  height: min-content !important;
+}
+
+.wmaxcontent {
+  width: max-content !important;
+}
+
+.hmaxcontent {
+  height: max-content !important;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--font-grande);
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.secondarytitle {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: var(--font-grande);
+}
+
+.bg-attach-fix {
+  background-attachment: fixed;
+}
+
+.gridcenter {
+  grid-column: 1/-1 !important;
+  width: 100% !important;
+}
+
+.dflex {
+  display: flex !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-evenly {
+  justify-content: space-evenly !important;
+
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.align-start {
+  align-items: start !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.align-baseline {
+  align-items: baseline !important;
+}
+
+.dcenter {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.dcol {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.relative {
+  position: relative
+}
+
+.dcolcenter {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.color-grey {
+  color: var(--grey-color) !important;
+}
+
+.relative {
+  position: relative;
+}
+
+
+.check {
+  font-size: 1.2rem !important;
+  display: inline-block;
+  color: #FF9933;
+  transform: translateY(4px);
+}
+
+.leermas {
+  color: #FF9933;
+  width: max-content;
+  min-width: fit-content;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+
+  svg {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    color: var(--stronggreen-color) !important;
+  }
+}
+
+.center-child {
+  display: grid;
+  place-items: center;
+}
+
+.tituloImagen {
+  font-size: var(--font-gigante) !important;
+}
+
+.tituloSection {
+  font-size: var(--font-mediana2) !important;
+}
+
+.subtituloSection {
+  font-size: var(--font-mediana) !important;
+}
+
+.parrafoSection {
+  font-size: var(--font-normal) !important;
+}
+
+.tituloBox {
+  margin-bottom: 1rem;
+  color: white;
+  text-align: center;
+  font-size: var(--font-grande);
+  background-color: var(--stronggreen-color);
+  padding: clamp(0.5rem, 1rem, 2rem);
+  border-radius: 5px;
+}
+
+@media (max-width:q.$query-mobile-large) {
+  .mobile-dnone {
+    display: none !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--gold-800) !important;
+}

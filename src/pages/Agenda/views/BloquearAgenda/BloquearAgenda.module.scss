@@ -1,0 +1,180 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.calendarWrapper {
+  flex: 2;
+  min-width: 800px;
+}
+
+.monthCard {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.monthTitle {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.panel {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-height: 600px;
+  overflow-y: auto;
+  
+  h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 20px;
+  }
+}
+
+.blockedDaysList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blockedDayItem {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #e9f7fe;
+    transform: translateX(5px);
+  }
+  
+  strong {
+    color: #2c3e50;
+    display: inline-block;
+    min-width: 90px;
+  }
+}
+
+.normalDay {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  pointer-events: none;
+
+}
+
+
+.holidayDay {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #bdc3c7, #bdc3c7);
+  border: none;
+  font-weight: 700;
+  margin: 3px;
+  width: 100%;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+:global {
+  .rbc-month-view {
+    border: none;
+    border-radius: 8px;
+  }
+
+  .rbc-month-header {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .rbc-header {
+    padding: 8px 3px;
+    font-size: 12px;
+    color: #7f8c8d;
+    font-weight: 500;
+  }
+
+  .rbc-day-bg {
+    border-color: #eaeaea;
+  }
+
+  .rbc-date-cell {
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .rbc-date-cell:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .rbc-off-range {
+    color: #bdc3c7;
+  }
+
+  .rbc-off-range-bg {
+    background: #f9f9f9;
+  }
+}
+
+.weekDayHeader {
+  text-align: center;
+  padding: 8px 3px;
+  font-size: 12px;
+  color: #7f8c8d;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+:global(.rbc-date-cell .rbc-button-link) {
+  pointer-events: none;
+}
+
+// Responsive
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .calendarWrapper, .panel {
+    min-width: 100%;
+  }
+}

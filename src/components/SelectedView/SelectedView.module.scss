@@ -1,0 +1,71 @@
+.botonera-default {
+  // container
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+  background: var(--white);
+  box-shadow: 4px 5px 13px 0px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+  width: 100%;
+
+  &-button-active,
+  &-button {
+    // clases de los botones generales
+
+    width: 100%;
+
+    span {
+      // clases de los textos de los botones
+      font-weight: 400;
+      font-size: 12px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      height: 100%;
+      padding: 1rem 0rem;
+      cursor: default;
+    }
+  }
+
+  &-button {
+
+    // clases de los botones no seleccionados
+    span {
+      // clases de los textos no seleccionados
+
+      color: var(--gray);
+    }
+  }
+
+  &-button-active {
+    // clases de los botones seleccionados
+
+    width: 100%;
+
+    span {
+      // clases de los textos de los botones seleccionados
+
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      cursor: default;
+      // color: #fafafa;
+    }
+  }
+
+
+  &-line {
+    // Linea baja que se muebe automaticamente al boton seleecionado
+    // desaparecer con un ' display:none; '
+
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--gold);
+    z-index: 50;
+    bottom: 0;
+  }
+}

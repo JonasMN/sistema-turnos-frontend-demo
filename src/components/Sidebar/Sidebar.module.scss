@@ -1,0 +1,97 @@
+.sidebar {
+    width: 230px;
+    background-color: var(--white);
+    height: calc(100vh - 57px);
+    border-right: 1px solid #d2d6de;
+    padding: 0.8rem 0.2rem 0.8rem 0.8rem;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    transition: all 250ms ease;
+    opacity: 1;
+
+    .userPanel {
+        display: flex;
+        align-items: center;
+        background-color: #ecf0f5;
+        padding: 0.5rem;
+        border-radius: 5px;
+        gap: 1rem;
+    }
+
+    span {
+        padding: 0 0.5rem;
+    }
+
+    .menuNavegacion {
+        font-size: 12px;
+        margin: .7rem 0;
+        color: #848484;
+        ;
+    }
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    .info {
+        font-size: 0.8rem;
+
+        p {
+            margin: 0;
+        }
+
+        svg {
+            font-size: 0.6rem;
+            color: #3c763d;
+        }
+
+    }
+
+
+    &:hover {
+        overflow: auto;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f1f1f1;
+        /* Fondo del scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #d6d6d6;
+        /* Color del slider */
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        /* Borde del slider */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #c0c0c0;
+        /* Color del slider al hacer hover */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f9fafc;
+        /* Fondo del track */
+    }
+
+    /* Compatibilidad con Firefox */
+    scrollbar-width: thin;
+    /* Grosor del scrollbar */
+    scrollbar-color: #d6d6d6 #f9fafc;
+}
+
+.sidebar.isOpen {
+    transition: all 250ms ease;
+    width: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        height: calc(100vh - 138px);
+    }
+}

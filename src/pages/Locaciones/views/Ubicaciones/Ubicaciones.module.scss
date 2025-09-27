@@ -1,0 +1,46 @@
+.badgeWrapper {
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    background: #e0e0e057;
+    color: #333;
+    font-size: 0.7rem;
+    padding: 0 6px;
+    border-radius: 999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  
+    &:hover {
+      background: #d6d6d6;
+    }
+  
+    .tooltipContent {
+      visibility: hidden;
+      width: max-content;
+      max-width: 200px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 120%;
+      right: 0;
+      z-index: 999;
+      transition: opacity 0.2s;
+      font-size: 12px;
+      white-space: normal;
+    }
+  
+    &:hover .tooltipContent {
+      visibility: visible;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .badgeWrapper {
+      right: unset;
+      top: 15px;
+    }
+  }

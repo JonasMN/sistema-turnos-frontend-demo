@@ -1,0 +1,30 @@
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.modalContent {
+  height: 100vh;
+}
+
+.mapa {
+  display: inline;
+}
+
+.modal-body {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1 1 300px;
+}
+
+.map-section {
+  flex: 1 1 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-top: 1rem;
+}

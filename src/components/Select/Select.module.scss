@@ -1,0 +1,84 @@
+.selectField {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: var(--red);
+  margin-left: 0.25rem;
+  font-weight: 600;
+}
+
+.select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.1);
+  }
+
+  &:hover:not(:disabled) {
+    border-color: #bbb;
+  }
+
+  option:disabled {
+    color: #999;
+    font-style: italic;
+  }
+
+  &[multiple] {
+    height: 120px;
+    padding: 0.4rem 0.6rem;
+    cursor: default;
+
+    overflow-y: auto;
+  }
+}
+
+.selectError {
+  border-color: var(--red) !important;
+
+  &:focus {
+    border-color: var(--red) !important;
+    box-shadow: 0 0 0 2px rgba(221, 75, 57, 0.1) !important;
+  }
+}
+
+.selectDisabled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+
+  &:hover {
+    border-color: #ddd;
+  }
+}
+
+.errorMessage {
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '⚠️';
+    margin-right: 0.5rem;
+  }
+}

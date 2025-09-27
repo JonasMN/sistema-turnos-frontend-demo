@@ -1,0 +1,46 @@
+.button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+/* 🔹 Tamaños */
+.small {
+  padding: 0.4rem 0.8rem;
+  font-size: var(--font-chica);
+}
+
+.medium {
+  padding: 0.6rem 1.2rem;
+  font-size: var(--font-boton);
+}
+
+.large {
+  padding: 0.8rem 2.6rem;
+  font-size: var(--font-mediana);
+}

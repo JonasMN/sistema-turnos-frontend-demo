@@ -1,0 +1,114 @@
+:root {
+  $font-size-xs: 0.75rem;
+  /* 12px */
+  $line-height-xs: 1rem;
+  /* 16px */
+  $font-size-sm: 0.875rem;
+  /* 14px */
+  $line-height-sm: 1.25rem;
+  /* 20px */
+  $font-size-base: 1rem;
+  /* 16px */
+  $line-height-base: 1.5rem;
+  /* 24px */
+  $font-size-lg: 1.125rem;
+  /* 18px */
+  $line-height-lg: 1.75rem;
+  /* 28px */
+  $font-size-xl: 1.25rem;
+  /* 20px */
+  $line-height-xl: 1.75rem;
+  /* 28px */
+  $font-size-2xl: 1.5rem;
+  /* 24px */
+  $line-height-2xl: 2rem;
+  /* 32px */
+  $font-size-3xl: 1.875rem;
+  /* 30px */
+  $line-height-3xl: 2.25rem;
+  /* 36px */
+  $font-size-4xl: 2.25rem;
+  /* 36px */
+  $line-height-4xl: 2.5rem;
+  /* 40px */
+  $font-size-5xl: 3rem;
+  /* 48px */
+  $font-size-6xl: 3.75rem;
+  /* 60px */
+  $font-size-7xl: 4.5rem;
+  /* 72px */
+  $font-size-8xl: 6rem;
+  /* 96px */
+  $font-size-9xl: 8rem;
+
+  /* 128px */
+  .text-xs {
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+  }
+
+  .text-sm {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  .text-base {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+
+  .text-lg {
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+
+  .text-xl {
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+  }
+
+  .text-2xl {
+    font-size: $font-size-2xl;
+    line-height: $line-height-2xl;
+  }
+
+  .text-3xl {
+    font-size: $font-size-3xl;
+    line-height: $line-height-3xl;
+  }
+
+  .text-4xl {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+  }
+
+  .text-5xl {
+    font-size: $font-size-5xl;
+    line-height: 1;
+    /* Define el valor de línea según tus necesidades */
+  }
+
+  .text-6xl {
+    font-size: $font-size-6xl;
+    line-height: 1;
+    /* Define el valor de línea según tus necesidades */
+  }
+
+  .text-7xl {
+    font-size: $font-size-7xl;
+    line-height: 1;
+    /* Define el valor de línea según tus necesidades */
+  }
+
+  .text-8xl {
+    font-size: $font-size-8xl;
+    line-height: 1;
+    /* Define el valor de línea según tus necesidades */
+  }
+
+  .text-9xl {
+    font-size: $font-size-9xl;
+    line-height: 1;
+    /* Define el valor de línea según tus necesidades */
+  }
+}
