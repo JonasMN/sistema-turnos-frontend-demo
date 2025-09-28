@@ -19,7 +19,7 @@ const routesConfig = [
 
 export default function Rutas() {
     return (
-        <BrowserRouter basename={config.URL.BASENAME}>
+        <BrowserRouter>
             <Suspense fallback={<Loader />}>
                 <Routes>
                     <Route path="/login" element={<Login />} />
